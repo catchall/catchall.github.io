@@ -2,14 +2,16 @@
 $errors = '';
 $myemail = 'isi.catchall@gmail.com';//<-----Put Your email address here.
 if(empty($_POST['name'])  || 
-   empty($_POST['email']) || 
+	 empty($_POST['email']) ||
+	 empty($_POST['subject']) || 
    empty($_POST['message']))
 {
     $errors .= "\n Error: all fields are required";
 }
 
 $name = $_POST['name']; 
-$email_address = $_POST['email']; 
+$email_address = $_POST['email'];
+$subject = $_POST['subject']; 
 $message = $_POST['message']; 
 
 if (!preg_match(
@@ -22,7 +24,7 @@ $email_address))
 if( empty($errors))
 {
 	$to = $myemail; 
-	$email_subject = "Contact form submission: $name";
+	$email_subject = "Contact form submission: $name, $subject ";
 	$email_body = "You have received a new message. ".
 	" Here are the details:\n Name: $name \n Email: $email_address \n Message \n $message"; 
 	
