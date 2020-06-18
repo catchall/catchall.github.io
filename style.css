@@ -1,0 +1,168 @@
+.column-66 {
+  float: left;
+  width: 66.66666%;
+  padding: 20px;
+}
+
+.column-33 {
+  float: left;
+  width: 33.33333%;
+  padding: 20px;
+}
+
+.zoom {
+  transition: transform .2s; /* Animation */
+  width: 300px;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.25); 
+}
+
+.video-section {
+  position: relative;
+}
+
+
+.style1 {
+  color: rgb(154, 180, 81);
+  text-shadow: 1px 1px 1px rgba(3, 61, 21, 0.19);
+  
+  background-image: -webkit-gradient(
+  linear,
+  left top, left bottom,
+  from(rgb(36, 148, 36)),
+  to(rgb(42, 78, 48))
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;                
+} 
+
+.gradient:hover, .gradient .current {
+  color: rgb(8, 58, 3);
+  text-shadow: 0px 0px 3px rgba(255, 255, 255, 0);
+
+  background-image: -webkit-gradient(
+  linear,
+  left top, left bottom,
+  from(rgba(160, 233, 77, 0.774)),
+  to(rgba(34, 95, 47, 0.699))
+  );
+}
+
+.div1 {
+  width: 350px;
+  height: 450px;
+  border: 1px solid rgb(8, 58, 3)
+}
+
+.div2 {
+  width: 400px;
+  height: 300px;
+  border: 1px solid rgb(8, 58, 3)
+}
+
+.teamdiv {
+  background-color: white;
+  width: 400px;
+  height: 400px;
+}
+
+.div4 {
+  background-color: white;
+  width: 400px;
+  height: 300px;
+  border: 1px solid rgb(8, 58, 3)
+}
+
+.style2 {
+  color: rgb(253, 253, 252);
+  text-shadow: 1px 1px 1px rgba(3, 61, 21, 0.19);
+  
+  background-image: -webkit-gradient(
+  linear,
+  left top, left bottom,
+  from(rgb(253, 253, 253)),
+  to(rgb(248, 248, 248))
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+	
+  transition: all 0.1s ease-in-out;
+  -webkit-transition: all 0.1s ease-in-out;                
+} 
+
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  float: left;
+  padding: 15px;
+}
+
+/* For mobile phones: */
+[class*="col-"] {
+  width: 100%;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100vh;
+  height: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns */
+.column {
+  flex: 25%;
+  padding: 20px;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .column {
+    flex: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .row {
+    flex-direction: column;
+  }
+}
