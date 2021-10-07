@@ -36,9 +36,9 @@
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                 <div class="navbar-nav">
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    <a class="nav-link" href="about.html">About</a>
+                    <a class="nav-link" href="error.html">About</a>
                     <a class="nav-link" href="solutions.html">Solutions</a>
-                    <a class="nav-link" href="#">News</a>
+                    <a class="nav-link" href="error.html">News</a>
                     <a class="nav-link" href="contact.html">Contact Us</a>
                 </div>
             </div>
@@ -61,7 +61,8 @@
 
             <div class="d-flex fade-2">
                 <p class="subtitle">Transforming cities and communities into <b>smart</b>, <b>sustainable</b>, and
-                    <b>safe</b> urban centers.d
+                    <b>safe</b> urban centers
+                </p>
             </div>
 
             <button class="btn">
@@ -69,10 +70,10 @@
             </button>
 
             <button class="btn">
-               <a href="contact.html"> <i class="fas fa-2x fa-envelope"></i></a> 
+                <a href="contact.html"> <i class="fas fa-2x fa-envelope"></i></a>
             </button>
 
-            <img src="res/img/city.png" class="city">
+            <img src="res/img/city.png" class="city d-none d-sm-block">
 
 
         </header>
@@ -82,12 +83,15 @@
         <section id="pillars" class="p-5" style="height: 100vh">
 
 
-            <header class="pt-3 d-flex justify-content-start">
+            <header class="pt-3 d-flex justify-content-between">
                 <h1 class="fade-2">Why choose ISI?</h1>
+                <a href="error.html">
+                    <button type="button" class="btn btn-success">Learn More</button>
+                </a>
             </header>
 
             <div class="d-flex justify-content-start fade-2">
-                <p>                               We leverage machine learning and computer vision algorithms to deliver our custom
+                <p> We leverage machine learning and computer vision algorithms to deliver our custom
                     products and services
                 </p>
             </div>
@@ -106,7 +110,7 @@
                         </div>
                         <div class=" d-flex justify-content-center text-center ">
                             <p>
- 
+
                             </p>
                         </div>
                     </div>
@@ -179,8 +183,10 @@
                                 <img src="res/img/ca_logo.png" style="width: 25rem;">
                             </div>
 
-                            <div class="col d-flex justify-content-end p-5" >
-                                <button type="button" class="btn btn-success">View Solutions</button>
+                            <div class="col d-flex justify-content-end p-5">
+                                <a href="solutions.html">
+                                    <button type="button" class="btn btn-success">View Solutions</button>
+                                </a>
                             </div>
                         </div>
 
@@ -213,6 +219,7 @@
 
 
     <footer class="bg-gray">
+
         <div class="p-5 row">
             <div class="col-auto">
                 <a class="me-4" href=" "><img class="bg-white" src="res/img/logo_isi.png" /></a>
@@ -233,32 +240,30 @@
             </div>
             <div class="col ">
                 <h5>Company</h5>
-                <a href="about.html">
-                    <p>About</p>
-                </a>
+                <a href="error.html">About</a>
             </div>
             <div class="col ">
                 <h5>Product</h5>
                 <p>Request a demo</p>
-                <p>Solutions</p>
+                <a href="solutions.html">Solutions</a>
 
             </div>
             <div class="col ">
                 <h5>Resouces</h5>
-                <p>News</p>
+                <a href="error.html">News</a>
                 <p>Privacy Policy</p>
 
             </div>
             <div class="col">
                 <h5>Support</h5>
-                <p>Contact Us</p>
+                <a href="contact.html">Contact Us</a>
 
             </div>
-
         </div>
 
-
     </footer>
+
+
     <!-- SCRIPTS -->
     <script src="res/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
