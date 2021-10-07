@@ -88,3 +88,14 @@ b{
 .color-green{
   color: #1A7960;
 }
+
+a {
+  color:#3B3B3B;
+  text-decoration: none;
+}
+
+a:hover {
+  color:#00A0C6; 
+  text-decoration:none; 
+  cursor:pointer;  
+}
