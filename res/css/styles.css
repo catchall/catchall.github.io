@@ -57,12 +57,8 @@ background-color: #EFEFEF;
 }
 
 
-
-
-
-
 .title{
-  font-size: 4rem;
+  font-size: 5em;
 }
 
 .subtitle{
@@ -89,6 +85,11 @@ b{
   color: #1A7960;
 }
 
+.color-gray{
+  color: #1D1D1D;
+}
+
+
 a {
   color:#3B3B3B;
   text-decoration: none;
@@ -99,3 +100,4 @@ a:hover {
   text-decoration:none; 
   cursor:pointer;  
 }
+
