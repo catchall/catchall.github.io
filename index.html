@@ -35,7 +35,7 @@
 <body class="bg">
 
     <!-- Navbar -->
-    <nav class="navbar shadow navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar shadow fixed-top navbar-expand-lg navbar-light bg-light">
         <div class="container px-4">
             <a class="navbar-brand" href="index.html"><img src="res/img/logo_isi.png" /></a>
 
@@ -69,7 +69,7 @@
 
 
     <!-- Header -->
-    <header class="container px-4 h-75" style="margin-top: 6rem;">
+    <header class="container px-4 h-75" style="margin-top: 13rem;">
 
         <p class="display-3" style="font-weight: 600;">Intelligent Systems Innovation</p>
         <p class="fs-3">Transforming cities and communities into <b>smart</b>, <b>sustainable</b>, and
@@ -96,127 +96,165 @@
 
     <!-- About -->
 
-    <section class="container px-4" style="margin-top: 6rem;">
+    <section class="container px-4" style="margin-top: 10rem;">
 
         <div class="row">
-            <div class="col d-flex align-items-center">
-                <p class="display-5 fw-normal">
-                    Why choose ISI?
-                </p>
 
-            </div>
+            <p class="display-4 text-center fw-normal">
+                Why choose ISI?
+            </p>
 
-            <div class="col-auto d-flex align-items-center">
-                <a href="about.html">
-                    <button type="button" class="btn btn-success">Learn More</button>
-                </a>
-            </div>
         </div>
 
-        <div class="row d-flex justify-content-center" style="margin-top: 4rem;">
+        <div class="row d-flex justify-content-center" style="margin-top: 2rem;">
 
             <div class="col-lg-4">
-                <div class="card shadow bg-gray p-4 m-3">
-
-                    <div class=" d-flex justify-content-center ">
+                <div class="card shadow bg-gray p-5 m-3">
+                    <div class="d-flex justify-content-center ">
                         <i class="fa fa-5x fa-lightbulb-on color-green" aria-hidden="true"></i>
                     </div>
 
                     <div class=" d-flex justify-content-center my-3">
-                        <h4>Smart</h4>
+                        <p class="h2">Smart</p>
                     </div>
-                    <div class=" d-flex justify-content-center text-center ">
-                        <p>
+                    <div class="d-flex justify-content-center text-center ">
+                        <p class="fs-5 p-0 m-0">
                             State-of-the-art solutions for better accuracy and reliability
                         </p>
                     </div>
-
                 </div>
-
-
             </div>
 
+
             <div class="col-lg-4">
-                <div class="card shadow bg-gray p-4 m-3">
+                <div class="card shadow bg-gray p-5 m-3">
 
                     <div class=" d-flex justify-content-center ">
                         <i class="fa fa-5x fa-leaf color-green" aria-hidden="true"></i>
                     </div>
 
                     <div class=" d-flex justify-content-center my-3">
-                        <h4>Sustainable</h4>
+                        <p class="h2">Sustainable</p>
                     </div>
 
                     <div class=" d-flex justify-content-center text-center ">
-                        <p>
-                            Cost-effective systems with seamless integration
+                        <p class="fs-5 p-0 m-0">
+                            Cost-effective systems <br> with seamless <br> integration
                         </p>
                     </div>
                 </div>
             </div>
 
             <div class="col-lg-4">
-                <div class="card shadow bg-gray p-4 m-3">
+                <div class="card shadow bg-gray p-5 m-3">
 
                     <div class=" d-flex justify-content-center ">
                         <i class="fa fa-5x fa-shield-alt color-green" aria-hidden="true"></i>
                     </div>
 
                     <div class=" d-flex justify-content-center my-3">
-                        <h4>Safe</h4>
+                        <p class="h2">Safe</p>
                     </div>
 
                     <div class=" d-flex justify-content-center text-center ">
-                        <p>
+                        <p class="fs-5 p-0 m-0">
                             Improve safety and security with fast and detailed information
                         </p>
                     </div>
                 </div>
             </div>
+
+            <p class="text-center mt-5">
+                <a href="about.html">
+                    <button type="button" class="btn btn-lg btn-success">Learn More</button>
+                </a>
+            </p>
+
         </div>
 
     </section>
 
     <!-- Solutions -->
 
-    <section class="container px-4" style="margin-top: 8rem;">
-        <p class="display-5 fw-normal text-center">
+    <section class="container px-4" style="margin-top: 10rem;">
+        <p class="display-4 fw-normal text-center">
             Our technology
         </p>
-        <p class="text-center"><b>Proprietary</b> and <b>state-of-the art</b> solutions.</p>
+        <p class="fs-4 text-center"><b>Proprietary</b> and <b>state-of-the art</b> solutions.</p>
 
-        <div class="d-flex justify-content-center">
+        <div class="d-flex justify-content-center mt-5">
 
-            <div class="card bg-gray shadow mb-3 p-4" style="max-width: 1000px;">
+            <div class="card shadow mb-3 p-4" style="max-width: 1300px;">
+
                 <div class="row g-0">
-                    <div class="col-md-5 d-flex justify-content-center">
-                        <video class="img-fluid" controls>
-                            <source src="res/img/demo_vc.mp4" type="video/mp4">
-                        </video>
+
+                    <div class="col-md-7 my-auto">
+                    
+                        <!-- Carousel -->
+                        <div id="PC_carousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#PC_carousel" data-bs-slide-to="0" class="active"
+                                    aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#PC_carousel" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#PC_carousel" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+
+                                    <video class="img-fluid" autoplay loop muted>
+                                        <source src="res/vid/vc_01.mp4" type="video/mp4">
+                                    </video>
+
+                                </div>
+                                <div class="carousel-item">
+                                    <video class="img-fluid" autoplay loop muted>
+                                        <source src="res/vid/pc_01.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                                <div class="carousel-item">
+                                    <video class="img-fluid" autoplay loop muted>
+                                        <source src="res/vid/lpr_01.mp4" type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#PC_carousel"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#PC_carousel"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+
                     </div>
 
-                    <div class="col-md-7 px-2">
+                    <div class=" col-md-5 px-2">
                         <div class="card-body">
                             <div class="row">
                                 <div class="col">
                                     <img class="img-fluid" src="res/img/ca_logo.png">
                                 </div>
 
-                                <div class="col-auto d-flex align-items-center">
-                                    <a href="solutions.html">
-                                        <button type="button" class="btn btn-success">View Solutions</button>
-                                    </a>
-                                </div>
                             </div>
 
-                            <div class="row">
-                                <p class="card-text">CATCH-ALL AI-Powered Visual Analytics is an artificial
+                            <div class="row mt-4 px-3">
+                                <p class="fs-5 card-text">CATCH-ALL AI-Powered Visual Analytics is an artificial
                                     intelligence-based CCTV monitoring system that can automatically count, classify,
                                     and identify vehicles. It offers customized solutions based on customer needs. Its
                                     main applications include traffic monitoring and congestion analysis, traffic
                                     violations detection, license plate recognition.</p>
                             </div>
 
+                            <p class="text-center mt-4">
+                                <a href="solutions.html">
+                                    <button type="button" class="btn btn-lg btn-success">View Solutions</button>
+                                </a>
+                            </p>
 
                         </div>
                     </div>
@@ -263,7 +301,8 @@
 
                         </a>
 
-                        <p class="card-text">"A new software that will help authorities to quickly and more efficiently
+                        <p class="fs-5 card-text">"A new software that will help authorities to quickly and more
+                            efficiently
                             identify traffic violators is now being developed by researchers from the De La Salle
                             University (DLSU)."
                         </p>
@@ -285,7 +324,8 @@
                             <h5 class="card-title">CATCH-ALL software to capture motorist’s traffic violations 24/7</h5>
                         </a>
 
-                        <p class="card-text">"The De La Salle University launched its new software to capture motorists’
+                        <p class="fs-5 card-text">"The De La Salle University launched its new software to capture
+                            motorists’
                             traffic violations all day. So far, 10 CCTVS have been distributed around Manila to test the
                             software."
                         </p>
@@ -309,7 +349,7 @@
                             </h5>
                         </a>
 
-                        <p class="card-text">"The City of Manila, the partner for implementation of the Project,
+                        <p class="fs-5 card-text">"The City of Manila, the partner for implementation of the Project,
                             recognizes the potential of CATCH-ALL as solution to its worsening traffic situation"
                         </p>
                         <p class="card-text"><small class="text-muted">May 29, 2017</small></p>
@@ -330,7 +370,7 @@
                             <h5 class="card-title">MMDA to test DLSU’s smart technology to catch violators on Edsa</h5>
                         </a>
 
-                        <p class="card-text">"Lim said that the new technology would “strengthen” the MMDA’s
+                        <p class="fs-5 card-text">"Lim said that the new technology would “strengthen” the MMDA’s
                             implementation of the no-contract apprehension policy"
                         </p>
                         <p class="card-text"><small class="text-muted">September 13, 2017</small></p>
