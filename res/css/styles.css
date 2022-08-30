@@ -56,6 +56,9 @@ body, html {
 background-color: #EFEFEF;
 }
 
+.bg-footer{
+  background-color: #185249;
+  }
 
 .title{
   font-size: 5em;
@@ -77,18 +80,29 @@ background-color: #EFEFEF;
     animation-duration: 2s;
 }
 
-b{
-  color: #1A7960;
+.btn-success{
+  background-color: #358873;
 }
 
+.btn-success:hover{
+  background-color: #346659;
+}
+
+.bg-color-green{
+  background-color: #358873;
+}
 .color-green{
-  color: #1A7960;
+  color: #358873;
 }
 
 .color-gray{
   color: #1D1D1D;
 }
 
+
+.color-white{
+  color: white;
+}
 
 a {
   color:#3B3B3B;
